@@ -1,3 +1,9 @@
+// AUTO-DISABLED for raphael (sm8150) build: every module name in this
+// file collides with the sm8150 audio HAL, which is the actual SoC's
+// HAL (BOARD_USES_QCOM_HARDWARE := true on msmnile). sm8350 namespace
+// is on PRODUCT_SOONG_NAMESPACES only for the display composer-service.
+// Header files in this dir stay available for tfa98xx include paths.
+/*
 cc_library_shared {
     name: "libqcompostprocbundle",
     relative_install_path: "soundfx",
@@ -97,3 +103,4 @@ cc_library_shared {
         integer_overflow: true,
     },
 }
+*/

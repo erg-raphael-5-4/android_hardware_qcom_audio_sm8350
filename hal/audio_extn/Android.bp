@@ -1,3 +1,8 @@
+// AUTO-DISABLED for raphael (sm8150) build: 12 modules collide with the
+// sm8150 audio_extn HAL. The two unique modules (libicc, libsynth) have
+// no consumers in this build (verified by name lookup across hardware/,
+// device/, vendor/, frameworks/).
+/*
 cc_defaults {
     name: "qtiaudio_extn_defaults",
 
@@ -238,3 +243,4 @@ cc_library_shared {
         "libexpat",
     ],
 }
+*/
